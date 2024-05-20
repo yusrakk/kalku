@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>CALCINARY</title>
+
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/nivo-lightbox.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button id="navbarToggle" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="/html/home-page.html" class="navbar-brand">Calc<span class="navbar-logo">i</span>nary</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/html/home-page.html" class="smoothScroll">HOME</a></li>
+                    <li><a href="/html/complex-page.html" class="smoothScroll">COMPLEX NUMBER</a></li>
+                    <li><a href="/html/quiz-page.html" class="smoothScroll">QUIZ</a></li>
+                    <li><a href="/html/calculator-page.html" class="smoothScroll">CALCULATOR</a></li>
+                    <li><a href="/html/about-page.html" class="smoothScroll">ABOUT</a></li>
+                    <li><a href="/html/contact-page.html" class="smoothScroll">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="quiz">
+        <h1>Quiz Time</h1>
+        <div class="container">
+            <button id="startQuiz">Start Quiz</button>
+            <div id="quizContainer" style="display: none;">
+                <div id="question" class="questions"></div>
+                <div id="options" class="option"></div>
+                <div id="action-buttons">
+                    <button id="prevButton" onclick="prevQuestion()">Back</button>
+                    <button id="nextButton" onclick="nextQuestion()">Next</button>
+                    <button id="submitButton" onclick="submitQuiz()" style="display: none;">Submit</button>
+                    <button id="backToStart" onclick="backToStart()" style="display: none;">Back to Start</button>
+                </div>
+            </div>
+            <div id="resultContainer" style="display: none;">
+                <div id="score"></div>
+                <div id="submittedAnswers"></div>
+                <div id="correctAnswers"></div>
+                <button id="backToStartFromScore" onclick="backToStart()">Back to Start</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/imagesloaded.min.js"></script>
+    <script src="/js/isotope.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/nivo-lightbox.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/tailwind.config.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/dd9af7210e.js" crossorigin="anonymous"></script>
+
+    <script src="/js/quiz.js"></script>
+
+</body>
+</html>
